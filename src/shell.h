@@ -19,7 +19,7 @@
 
 /**
  * @brief shell 断言
- * 
+ *  	
  * @param expr 表达式
  * @param action 断言失败操作
  */
@@ -74,6 +74,9 @@
  */
 #define     SHELL_CMD_PARAM_NUM(num) \
             ((num & 0x0000000F)) << 16
+
+// xming: 该宏实现了在不同编译器下实现将代码或数据放入特定内存段的功能。
+// 这样子可以方便移植
 
 #ifndef SHELL_SECTION
     #if defined(__CC_ARM) || defined(__CLANG_ARM)
